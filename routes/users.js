@@ -4,10 +4,11 @@ const router = express.Router();
 
 
 // It sends the login page
-router.get('/login',(req,res) =>res.send('Login'));
+router.get('/login',(req,res) =>res.render('login'));
 
 // Create a register page
-router.get('/register',(req,res) => res.send('Register'));
+
+router.get('/register',(req,res) => res.render('register'));
 
 
 
